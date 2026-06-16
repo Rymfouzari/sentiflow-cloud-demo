@@ -15,18 +15,10 @@ function CollectTimer() {
   const [interval, setIntervalMin] = useState(15);
   const [pipelineInfo, setPipelineInfo] = useState(null);
 
-  const checkStatus = () => {
-    fetch('/admin/collect-timer')
-      .then(r => r.json())
-      .then(data => {
-        setPaused(!data.active);
-        setIntervalMin(data.interval_minutes || 15);
-      })
-      .catch(() => {});
-    fetch('/admin/pipeline/timer')
-      .then(r => r.json())
-      .then(data => setPipelineInfo(data))
-      .catch(() => {});
+    const checkStatus = () => {
+    setPaused(true);
+    setIntervalMin(15);
+    setPipelineInfo(null);
   };
 
   useEffect(() => {
