@@ -1,0 +1,239 @@
+.generated-dashboard-renderer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.generated-dashboard-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 24px;
+  border: 1px solid #2d2d2d;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #111827, #1f2937);
+}
+
+.generated-dashboard-kicker {
+  margin: 0 0 6px;
+  color: #ef4444;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+}
+
+.generated-dashboard-hero h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.generated-dashboard-question {
+  color: #cbd5e1;
+  margin: 10px 0 0;
+}
+
+.generated-dashboard-date {
+  min-width: 170px;
+  text-align: right;
+  color: #94a3b8;
+}
+
+.generated-dashboard-date span,
+.generated-dashboard-date strong {
+  display: block;
+}
+
+.generated-dashboard-date strong {
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.generated-dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.generated-metric-card,
+.generated-widget-card,
+.generated-pie-card {
+  background: #1a1d23;
+  border: 1px solid #2d2d2d;
+  border-radius: 14px;
+}
+
+.generated-metric-card {
+  padding: 18px;
+}
+
+.generated-metric-value {
+  display: block;
+  color: #ef4444;
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.generated-metric-label {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.generated-widget-card {
+  padding: 20px;
+}
+
+.generated-widget-header {
+  margin-bottom: 14px;
+}
+
+.generated-widget-header h2 {
+  margin: 0 0 4px;
+  color: #f8fafc;
+}
+
+.generated-widget-header p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.generated-pie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.generated-pie-card {
+  padding: 14px;
+}
+
+.generated-pie-card h3 {
+  margin: 0 0 8px;
+  color: #f8fafc;
+}
+
+.generated-sentiment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 8px;
+}
+
+.generated-sentiment-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.generated-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.generated-empty {
+  color: #94a3b8;
+  padding: 18px;
+  background: #111827;
+  border: 1px dashed #374151;
+  border-radius: 12px;
+}
+
+.generated-answer-card p {
+  color: #d1d5db;
+  white-space: pre-line;
+  line-height: 1.55;
+}
+
+@media (max-width: 800px) {
+  .generated-dashboard-hero,
+  .generated-dashboard-metrics {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .generated-dashboard-date {
+    text-align: left;
+  }
+}
+
+@media print {
+  .sidebar,
+  .generated-dashboard-actions,
+  .dashboard-list-actions {
+    display: none !important;
+  }
+
+  .main-content {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .generated-widget-card,
+  .generated-dashboard-hero,
+  .generated-metric-card {
+    break-inside: avoid;
+  }
+}
+
+.generated-insight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.generated-insight-card {
+  padding: 16px;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  background: #111827;
+}
+
+.generated-insight-card h3 {
+  margin: 0 0 8px;
+  color: #f8fafc;
+}
+
+.generated-insight-score {
+  color: #ef4444;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.generated-insight-card p {
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.generated-insight-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+.generated-insight-stats strong {
+  color: #ffffff;
+}
+
+.generated-insight-note {
+  margin-top: 12px;
+  color: #d1d5db;
+  border-top: 1px solid #334155;
+  padding-top: 10px;
+}
+
+.generated-quality-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #94a3b8;
+  line-height: 1.45;
+}

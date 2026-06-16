@@ -1,0 +1,118 @@
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 10px;
+  background: #1a1d23;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  color: #fafafa;
+}
+
+.add-form select {
+  padding: 10px;
+  background: #1a1d23;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  color: #fafafa;
+}
+
+.add-form button {
+  padding: 10px 20px;
+  background: #ff4b4b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.target-card {
+  background: #1a1d23;
+  border: 1px solid #2d2d2d;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.target-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.target-header h3 { margin: 0; }
+
+.delete-btn {
+  background: none;
+  border: 1px solid #444;
+  color: #aaa;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover { color: #ff4b4b; border-color: #ff4b4b; }
+
+.target-actions {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.target-actions button {
+  padding: 8px 16px;
+  background: #2d2d2d;
+  color: #fafafa;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.target-actions button.primary {
+  background: #ff4b4b;
+}
+
+.target-actions button:disabled { opacity: 0.5; }
+
+.msg { padding: 10px; border-radius: 6px; margin: 10px 0; }
+.msg.success { background: #00c85322; color: #00c853; }
+.msg.error { background: #ff4b4b22; color: #ff4b4b; }
+
+.target-stats { color: #aaa; margin: 10px 0; font-size: 0.9rem; }
+
+.sentiment-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.pill {
+  background: #2d2d2d;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.tweets-list { margin-top: 15px; }
+.tweets-list summary { cursor: pointer; color: #aaa; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+th { color: #aaa; }
+.tweet-text { max-width: 400px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

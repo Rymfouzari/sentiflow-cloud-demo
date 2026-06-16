@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# UV
+.venv/
+uv.lock
+
+# Environment
+.env
+
+# Data
+data/raw/*
+data/processed/*
+data/models/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/models/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Docker
+postgres_data/
+
+# Node
+frontend/node_modules/
+node_modules/
+
+# Fichiers non essentiels exclus de app-v2
+sentiflow_fix2/
+wsl.localhost/
+.kiro/
+.pytest_cache/
+tests/
+# Modele dupliqué à la racine (le vrai est dans backend/app/ml/)
+/sentiflow_tiny_llm.pt

@@ -1,0 +1,52 @@
+.add-btn {
+  padding: 10px 20px;
+  background: #ff4b4b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.alert-form {
+  background: #1a1d23;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.alert-form select, .alert-form input[type="number"] {
+  padding: 10px;
+  background: #0e1117;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  color: #fafafa;
+}
+
+.alert-form label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #aaa;
+}
+
+.alerts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.alert-card {
+  background: #1a1d23;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #2d2d2d;
+}
+
+.alert-card h3 { margin: 0 0 10px; }
+.alert-card p { margin: 5px 0; color: #aaa; }

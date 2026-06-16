@@ -1,0 +1,117 @@
+{
+  "targets": [
+    "#france", "#minecraft", "#love", "#trump", "#psg", "#ia", "#openai",
+    "#football", "#politique", "#cinema", "#music", "#paris", "#ecologie",
+    "#bts", "#kpop", "#crypto", "#sport", "#tech", "#netflix", "#manga",
+    "@elonmusk", "@openai", "@nasa", "@bts_twt", "@netflixfr", "@minecraft",
+    "@macaborrrr", "@justinbieber"
+  ],
+  "sentiments": ["joie", "colere", "tristesse", "peur", "surprise", "amour", "neutre"],
+  "templates": {
+    "collect": [
+      "récupère les tweets avec {a}",
+      "collecte {a} puis analyse les sentiments",
+      "analyse les nouveaux tweets de {a}",
+      "crée la cible {a} et donne moi les résultats",
+      "lance une collecte twitter sur {a}",
+      "je veux savoir ce que les gens pensent de {a}",
+      "ajoute {a} et récupère les tweets",
+      "va chercher les tweets de {a}",
+      "récupère moi {a} stp"
+    ],
+    "summary": [
+      "résume l'activité de {a}",
+      "quel est le sentiment dominant sur {a}",
+      "fais une synthèse de {a} sur {days} jours",
+      "comment les gens réagissent à {a}",
+      "quels sont les signaux importants sur {a}",
+      "sentiment sur {a}",
+      "analyse {a}",
+      "c'est quoi le sentiment de {a}",
+      "les gens pensent quoi de {a}",
+      "dis moi le sentiment sur {a}",
+      "que pensent les gens de {a}",
+      "avis sur {a}"
+    ],
+    "compare": [
+      "compare {a} et {b}",
+      "qui est le plus positif entre {a} et {b}",
+      "compare les sentiments de {a} avec {b}",
+      "est-ce que {a} est plus négatif que {b}",
+      "différence entre {a} et {b}",
+      "lequel est mieux perçu {a} ou {b}",
+      "{a} vs {b}"
+    ],
+    "timeline": [
+      "montre l'évolution temporelle de {a}",
+      "est-ce que la colère augmente sur {a}",
+      "tendance des sentiments sur {a} pendant {days} jours",
+      "est-ce que la joie augmente sur {a}",
+      "comment évolue le sentiment sur {a}",
+      "la perception de {a} s'améliore ou se dégrade",
+      "évolution de {a} cette semaine"
+    ],
+    "database": [
+      "quels sont mes cibles",
+      "combien de tweets j'ai en base",
+      "quelle est la répartition des langues dans mes tweets",
+      "quels comptes génèrent le plus de colère",
+      "quels comptes génèrent le plus de tristesse",
+      "quels hashtags sont les plus négatifs",
+      "qui a le plus de tweets positifs",
+      "statistiques globales de mes données",
+      "combien de tweets analysés par cible",
+      "c'est quoi les cibles que j'ai",
+      "mes données en base",
+      "quelles cibles je suis",
+      "nombre total de tweets",
+      "répartition des sentiments global",
+      "montre moi mes stats",
+      "combien de tweets j'ai sur chaque cible"
+    ],
+    "examples": [
+      "montre des exemples de tweets sur {a}",
+      "donne moi les tweets les plus {sentiment} sur {a}",
+      "affiche quelques tweets représentatifs de {a}",
+      "exemples de tweets {sentiment} sur {a}"
+    ]
+  },
+  "intents": {
+    "collect": {
+      "intent": "collect_analyze_summarize",
+      "actions": ["create_missing_targets", "collect_tweets", "analyze_sentiments", "summarize", "generate_dashboard"],
+      "force_refresh": true,
+      "dashboard": true
+    },
+    "summary": {
+      "intent": "summarize",
+      "actions": ["analyze_sentiments", "summarize", "generate_dashboard"],
+      "force_refresh": false,
+      "dashboard": true
+    },
+    "compare": {
+      "intent": "compare",
+      "actions": ["analyze_sentiments", "compare_targets", "generate_dashboard"],
+      "force_refresh": false,
+      "dashboard": true
+    },
+    "timeline": {
+      "intent": "timeline",
+      "actions": ["analyze_sentiments", "get_timeline", "generate_dashboard"],
+      "force_refresh": false,
+      "dashboard": true
+    },
+    "database": {
+      "intent": "query_database",
+      "actions": ["query_database"],
+      "force_refresh": false,
+      "dashboard": false
+    },
+    "examples": {
+      "intent": "examples",
+      "actions": ["analyze_sentiments", "get_examples"],
+      "force_refresh": false,
+      "dashboard": false
+    }
+  }
+}

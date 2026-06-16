@@ -1,0 +1,21 @@
+question,expected_answer_contains,expected_sentiments,expected_keywords,difficulty
+"Quel est le sentiment général sur #france ?","sentiment,france,dominant","joie,colere,tristesse","france,sentiment",easy
+"Pourquoi les gens sont en colère sur #trump ?","colere,négatif,trump","colere","trump,colere",easy
+"Les tweets sur #IA sont-ils positifs ou négatifs ?","positif,négatif,IA","joie,surprise","ia,positif,negatif",medium
+"Compare les sentiments entre #france et #psg","france,psg","joie,colere","france,psg",medium
+"Quels sont les tweets les plus tristes sur #love ?","triste,tristesse,love","tristesse","triste,love",easy
+"Y a-t-il de la peur dans les tweets sur #politique ?","peur,inquiet,politique","peur,colere","peur,politique",medium
+"Quel est le sentiment dominant sur #football ?","football,sentiment","joie,colere","football,sentiment",easy
+"Quel hashtag a le plus de tweets positifs ?","positif,joie","joie,amour","positif,joie",hard
+"Est-ce que la colère augmente sur #trump ?","colere,trump","colere","trump,colere",medium
+"Donne des exemples de tweets joyeux sur #love","joie,amour,love","joie,amour","love,joie",easy
+"Quel est le taux de confiance moyen des analyses ?","confiance,moyenne","","confiance,moyenne",hard
+"Quels mots reviennent le plus dans les tweets négatifs ?","mots,négatif,fréquent","colere,tristesse","mots,negatif",hard
+"Le sentiment sur #IA est-il plutôt positif ?","IA,positif,sentiment","joie,surprise","ia,positif",medium
+"Les tweets sur #psg sont-ils colère ou joie ?","psg,colere,joie","colere,joie","psg,colere,joie",medium
+"Combien de tweets ont été analysés sur #football ?","football,tweets,analysé","","football,tweets",easy
+"Quel est le sentiment dominant sur les 7 derniers jours ?","dominant,sentiment","joie,colere","dominant,sentiment",medium
+"Les tweets sur #politique sont-ils négatifs ?","politique,négatif,colere","colere,peur","politique,negatif,colere",medium
+"Quels comptes génèrent le plus de colère ?","négatif,colere,compte","colere","colere,compte",hard
+"Résume les sentiments de #france et #trump","france,trump,sentiment","joie,colere","france,trump,sentiment",medium
+"Est-ce que #love est plus positif que #politique ?","love,politique,positif","joie,amour,colere","love,politique,positif",hard

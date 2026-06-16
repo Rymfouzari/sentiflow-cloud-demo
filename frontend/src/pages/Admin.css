@@ -1,0 +1,35 @@
+.admin-actions {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.admin-actions button {
+  padding: 12px 24px;
+  background: #2d2d2d;
+  color: #fafafa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.admin-actions button:hover { background: #3d3d3d; }
+
+.task-results {
+  background: #1a1d23;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #2d2d2d;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.task-item.done { color: #00c853; }
+.task-item.error { color: #ff4b4b; }
+.task-item.running { color: #ffbb28; }
